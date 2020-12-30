@@ -1,5 +1,3 @@
-### Procedure
-
 - Step1: Select one of the example sample audio/waveforms file and click on the 'Generate Spectrum' button.
 
 - Step2: Study the effect of NFFT points on the spectrum.

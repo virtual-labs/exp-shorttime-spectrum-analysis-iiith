@@ -1,5 +1,3 @@
-### Observations
-
 - The size of the window (rectangular in this case) determines the temporal resolution, i.e., our ability to localize (or analyze) the frequency components of as small a time window as possible.
 
 - Increase in the size of window increases the spectral resolution due to narrower main lobe, but reduces the temporal resolution due to lack of localization of frequency components over the windowed block of the signal, and vice versa. The smaller the window size the more is the averaging or smearing in the spectral domain due to incresed main lobe width.

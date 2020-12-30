@@ -1,5 +1,3 @@
-### Assignment
-
 1. What is the need for windowing of the signal?
 
 2. Why rectangular window is not suitable for short-time DFT spectral analysis?
