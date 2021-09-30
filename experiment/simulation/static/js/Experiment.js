@@ -77,7 +77,7 @@ function LoadAudio(elem) {
     wavesurfer.load("static/wav/audio" + elem.value + ".wav");
     console.log(elem.value);
   } else {
-      wavesurfer.load("static/wav/audio2.wav");
+    //wavesurfer.load("static/wav/audio2.wav");
     console.log(elem.value);
   }
 }
