@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/plugin/wavesurfer.timeline.min.js"></script>-->
+		<script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+		<link href="static/css/bootstrap.min.css" rel="stylesheet"/>
+
+		<!-- Important Owl stylesheet -->
+		<link href="static/vendors/owl-carousel/owl.carousel.css" rel="stylesheet"/>
+		<link href="static/vendors/owl-carousel/owl.theme.css" rel="stylesheet"/>
+		<link href="static/vendors/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-67558473-1", "auto");
+      ga("send", "pageview");
+    </script>
+  </head>
+  <body class="index" id="page-top"><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
+    <div id="top">
+     
+
+      
+        <!-- =================================================================================================================================== -->
+        <div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
+          
+
+          <div class="row">
+         
+
+            <div class="col-md-10 lab-list-col-10">
+              <!--edit -->
+              
+              <div class="content" id="experiment-article-section-4-content">
+                <!-- PUT CONTENT HERE -->
+                <form>
+                  <select id="exnum" name="exnum" onchange="LoadAudio(this);">
+                    <option value="0">Select an audio file</option>
+                    <option value="1">ex1.wav</option>
+                    <option value="2">ex2.wav</option>
+                  </select>
+                  <div hidden="" id="audionum" value="0"></div>
+                  <button class="btn btn-primary position-relative" name="play" onclick="playButton();" type="button">
+                    Play/Pause
+                  </button>
+                  <button class="btn btn-primary position-relative" name="generate" onclick="generateSpectrum();" type="button">
+                    Generate Spectrum
+                  </button>
+                  <div class="position-relative" id="waveform" style="width: 900px;"></div>
+                  <br/>
+                  <div class="container" id="main-container" style="visibility: hidden;">
+                    <div class="row">
+                      <div align="center" class="col-xs-6">
+                        <p>Window Shapes</p>
+                        <select id="windowformtype" name="windowform" onchange="changeSpectrum(this.value)">
+                          <option value="rectangular">Rectangular</option>
+                          <option value="hamming">Hamming</option>
+                          <option value="hann">Hann</option>
+                          <option value="cosine">Cosine</option>
+                        </select>
+                      </div>
+                      <div align="center" class="col-xs-6">
+                        <p>NFFT Points</p>
+                        <select id="nfftvalue" name="nfft" onchange="changefft(this.value);">
+                          <option value="64">64</option>
+                          <option value="128">128</option>
+                          <option value="256">256</option>
+                          <option value="512">512</option>
+                          <option value="1024">1024</option>
+                          <option value="2048">2048</option>
+                          <option value="4096">4096</option>
+                          <option value="8192">8192</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <embed height="330/" id="windowedspecturms" width="570"></embed>
+                      </div>
+                      <div class="col-xs-6">
+                        <embed height="330/" id="nfftspectrum" width="570"></embed>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <p>
+                  <!--	<font size=-1> <a href="readme.html">README</a> -->
+                  <i>
+                    </i></p><ul><i>
+                      <!--<li> Note: Pre-recorded signals are sampled at 8KHz (\(F_s = 8000 Hz\)).
+    All recordings are sampled at \(F_s = 8000 Hz\).-->
+                    </i></ul><i>
+                    <!--
+<ol>
+<li>Select one of the example waveforms and click on the load button.</li>
+<li>Select a short segment of voiced speech and click on the spectrum button.</li>
+<li>Study the effect of NFFT points on the spectrum.</li>
+<li>Recompute the spectrum by selecting different lengths (5 ms, 10 ms and 50 ms) of the speech signal.</li>
+<li>Compare the spectra for two different window shapes using the two spectrum panels provided.</li>
+<li>Study the short-time spectrum for different category of sounds such as fricatives, nasals, semivowels, vowels and stops.</li>
+</ol>
+-->
+                  </i>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =================================================================================================================================== -->
+      </div>
+      <!-- content div -->
+
+  
+
+  
+ <script src="static/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="static/js/bootstrap.min.js"></script>
+
+  <script src="static/js/Experiment.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="static/js/custom.js"></script>
+
+
+<script src="../assets/js/iframeResize.js"></script></body><!-- jQuery --></html>
